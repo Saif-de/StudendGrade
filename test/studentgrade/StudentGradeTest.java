@@ -1,35 +1,50 @@
 package studentgrade;
 
-import junit.framework.TestCase;
+import org.junit.After;
+import org.junit.AfterClass;
+import static org.junit.Assert.assertEquals;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 /* JUnit 3.8.1 */
-public class StudentGradeTest extends TestCase {
+public class StudentGradeTest {
     
-    public StudentGradeTest(String testName) {
-        super(testName);
+ public class test{
+
+    @BeforeClass
+    public static void setUpClass() throws Exception {
     }
 
-    public void testGetGrade95() {
-        System.out.println("getGrade 95");
-        int mark = 95;
-        String expResult = "A";
-        String result = StudentGrade.getGrade(mark);
-        assertEquals(expResult, result);
+    @AfterClass
+    public static void tearDownClass() throws Exception {
     }
 
-    public void testGetGrade85() {
-        System.out.println("getGrade 85");
-        int mark = 85;
-        String expResult = "B";
-        String result = StudentGrade.getGrade(mark);
-        assertEquals(expResult, result);
+    @Before
+    public void setUp() throws Exception {
     }
-    
-    public void testGetGrade75() {
-        System.out.println("getGrade 85");
-        int mark = 75;
+
+    @After
+    public void tearDown() throws Exception {
+    }}
+
+ 
+    /**
+     * Test of main method, of class StudentGrade.
+     */
+   
+
+    /**
+     * Test of getGrade method, of class StudentGrade.
+     */
+    @Test
+    public void testGetGrade() {
+        System.out.println("getGrade");
+        int mark = 0;
         String expResult = "F";
         String result = StudentGrade.getGrade(mark);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+      
     }
 }
