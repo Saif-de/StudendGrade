@@ -46,5 +46,39 @@ public class StudentGradeTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
       
+        
+    }
+     @Test
+    public void testGetGrade1() {
+        System.out.println("getGrade");
+        int mark = 75;
+        String expResult = "F";
+        String result = StudentGrade.getGrade(mark);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+      
+        
+    }
+     @Test
+    public void testGetGrade2() {
+        System.out.println("getGrade");
+        int mark = 80;
+        String expResult = "B";
+        String result = StudentGrade.getGrade(mark);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+      
+        
+    }
+     @Test
+    public void testGetGrade3() {
+        System.out.println("getGrade");
+        int mark = 100;
+        String expResult = "A";
+        String result = StudentGrade.getGrade(mark);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+      
+        
     }
 }
